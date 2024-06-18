@@ -773,11 +773,11 @@ const NotesDirectory: React.FC = () => {
       />
 
       <Flex h="full">
-        <Box className='px-10 py-5 border-r h-full shrink-0 overflow-auto' width={{ base: '20%', sm: '200px', md: '250px', lg: '300px' }}>
+        <Box className='px-10 py-5 border-r h-full shrink-0 overflow-auto' flex="1">
           {renderEmptyState()}
         </Box>
 
-        <Box flex="1" p="4" overflow="auto" backgroundColor="#f5f5f5">
+        <Box flex="5" p="4" overflow="auto" backgroundColor="#f5f5f5">
             <Flex justify="space-between">
               <Text fontSize="2xl">Templates</Text>
               <Text color="blue" pr="5" cursor="pointer">{`View More ->`}</Text>
