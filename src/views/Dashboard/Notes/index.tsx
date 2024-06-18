@@ -51,7 +51,7 @@ import { PhoneIcon } from '@chakra-ui/icons';
 
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { BsSearch } from 'react-icons/bs';
-import { FaCalendarAlt, FaThLarge, FaThList, FaAngleDown, FaSortAmountDown } from 'react-icons/fa';
+import { FaThLarge, FaThList, FaAngleDown, FaSortAmountDown } from 'react-icons/fa';
 import { IoChatboxEllipsesOutline } from 'react-icons/io5';
 import { MultiSelect } from 'react-multi-select-component';
 import { useNavigate, useLocation } from 'react-router-dom';

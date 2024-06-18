@@ -130,7 +130,7 @@ const NewNote = () => {
     <>
       <Flex h="full">
         {/* Notes */}
-        <Box overflow="auto" p="5" flex="0.6" className="border-r" h="full" backgroundColor="#f5f5f5">
+        <Box overflow="auto" p="5" flex="0.8" className="border-r" h="full" backgroundColor="#f5f5f5">
           {/* pass the notes in the Sidebar */}
           {/* <Sidebar notes={notes} /> */}
           <Sidebar />
