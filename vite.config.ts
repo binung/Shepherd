@@ -13,16 +13,16 @@ const loadVite = ({ mode }: any) => {
       'process.env': env
     },
 
-    // server: {
-    //   port: PORT && isNaN(parseInt(PORT)) === false ? parseInt(PORT) : 3000
-    // },
     server: {
-      host: "127.0.0.1",
-      port: 5173, // You can change this port if needed
-      watch: {
-          usePolling: true, // Enable polling for file changes
-      },
-  },
+      port: PORT && isNaN(parseInt(PORT)) === false ? parseInt(PORT) : 3000
+    },
+    // server: {
+    //   host: "127.0.0.1",
+    //   port: 5173, // You can change this port if needed
+    //   watch: {
+    //       usePolling: true, // Enable polling for file changes
+    //   },
+    // },
     optimizeDeps: {
       esbuildOptions: {
         target: 'es2020'

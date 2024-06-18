@@ -130,14 +130,14 @@ const NewNote = () => {
     <>
       <Flex h="full">
         {/* Notes */}
-        <Box overflow="auto" p="5" className='border-r md:w-[300px] sm:w-[250px]' h="full" backgroundColor="#f5f5f5">
+        <Box overflow="auto" p="5" flex="0.6" className="border-r" h="full" backgroundColor="#f5f5f5">
           {/* pass the notes in the Sidebar */}
           {/* <Sidebar notes={notes} /> */}
           <Sidebar />
         </Box>
 
         {/* content of Note */}
-        <Box flex="1" p="4" h="full" overflow="auto" flexDirection="row" justifyContent="center" className="border-r">
+        <Box flex="2" p="4" h="full" overflow="auto" flexDirection="row" justifyContent="center" className="border-r">
           <Flex justify="space-between">
             <Text fontSize="20" fontWeight="600">Relatively Theory ...</Text>
             <Stack direction="row">
@@ -147,13 +147,13 @@ const NewNote = () => {
               </Flex>
 
               <Tag borderRadius="30px" px="3" colorScheme='white' border="1px solid #c5c5c5">
-                <MdCircle color="red" />
+                <MdCircle color="red" size="12" />
                 <TagLabel pl="3">
                   Physics
                 </TagLabel>
               </Tag>
               <Tag borderRadius="30px" px="3" colorScheme='white' border="1px solid #c5c5c5">
-                <MdCircle color="blue" />
+                <MdCircle color="blue" size="12" />
                 <TagLabel pl="3">
                   SAT
                 </TagLabel>

@@ -773,7 +773,7 @@ const NotesDirectory: React.FC = () => {
       />
 
       <Flex h="full">
-        <Box className='px-10 py-5 border-r md:w-[300px] sm:w-[250px] h-full shrink-0 overflow-auto'>
+        <Box className='px-10 py-5 border-r h-full shrink-0 overflow-auto' width={{ base: '20%', sm: '200px', md: '250px', lg: '300px' }}>
           {renderEmptyState()}
         </Box>
 
@@ -906,9 +906,9 @@ const NotesDirectory: React.FC = () => {
                     onChange={(e) => handleSearch(e.target.value)}
                     size="lg"
                     placeholder="Enter a topic"
-                    borderRadius="17px"
+                    borderRadius="20px"
                     backgroundColor="white"
-                    width={{base:'650px', lg:'700px', md:'650px', sm:'450px'}}
+                    width={{base:'70%', sm:'350px', md:'450px', lg:'700px'}}
                   />
                 </InputGroup>
               </Flex>
@@ -940,14 +940,14 @@ const NotesDirectory: React.FC = () => {
                 <Flex justify="space-between">
                   <Text>Relativity Theory</Text>
                   <Stack direction="row">
-                    <Tag borderRadius="30px" px="7" py="2" colorScheme='white' border="1px solid #c5c5c5">
-                      <MdCircle color="red" />
+                    <Tag borderRadius="30px" px="5" py="2" colorScheme='white' border="1px solid #c5c5c5">
+                      <MdCircle color="red" size="10" />
                       <TagLabel pl="3">
                       Physics
                       </TagLabel>
                     </Tag>
-                    <Tag borderRadius="30px" px="7" py="2" colorScheme='white' border="1px solid #c5c5c5">
-                      <MdCircle color="blue" />
+                    <Tag borderRadius="30px" px="5" py="2" colorScheme='white' border="1px solid #c5c5c5">
+                      <MdCircle color="blue" size="10" />
                       <TagLabel pl="3">
                       SAT
                       </TagLabel>
@@ -961,14 +961,14 @@ const NotesDirectory: React.FC = () => {
                 <Flex justify="space-between">
                   <Text>Relativity Theory</Text>
                   <Stack direction="row">
-                    <Tag borderRadius="30px" px="7" py="2" colorScheme='white' border="1px solid #c5c5c5">
-                      <MdCircle color="red" />
+                    <Tag borderRadius="30px" px="5" py="2" colorScheme='white' border="1px solid #c5c5c5">
+                      <MdCircle color="red" size="10" />
                       <TagLabel pl="3">
                       Physics
                       </TagLabel>
                     </Tag>
-                    <Tag borderRadius="30px" px="7" py="2" colorScheme='white' border="1px solid #c5c5c5">
-                      <MdCircle color="blue" />
+                    <Tag borderRadius="30px" px="5" py="2" colorScheme='white' border="1px solid #c5c5c5">
+                      <MdCircle color="blue" size="10" />
                       <TagLabel pl="3">
                       SAT
                       </TagLabel>
