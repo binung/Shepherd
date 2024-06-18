@@ -8,7 +8,7 @@ interface SidebarProps {
   onOptionClick?: (option: 'create-note' | 'upload-document') => void;
 }
 
-function Sidebar() {
+function NoteList() {
   const handleSearch = (value) => {
 
   }
@@ -128,4 +128,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default NoteList;

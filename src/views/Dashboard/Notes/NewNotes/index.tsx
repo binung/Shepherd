@@ -8,8 +8,10 @@ import BlockSuite from '../blockSuite';
 import { configuration } from '../blockSuite/editor/globalDoc';
 import ApiService from '../../../../services/ApiService';
 import { StyledToolbar } from './styles';
-import Sidebar from '../components/sidebar/index';
+
+import NoteList from '../components/list/index';
 import Chat from '../components/chat/index';
+import Quickbar from '../components/quickbar/index';
 
 import {
   Text,
@@ -18,7 +20,6 @@ import {
   Stack,
   Tag,
   TagLabel,
-  Button
 } from '@chakra-ui/react';
 import { MdOutlineLoyalty, MdCircle } from 'react-icons/md'; 
 
@@ -125,18 +126,23 @@ const NewNote = () => {
     }
   };
 
+  const [chat, SetChat] = useState(false);
+
+  const onChat = () => () => {
+    SetChat(!chat)
+  }
   
   return (
     <>
       <Flex h="full">
-        {/* Notes */}
+        {/* List Panel */}
         <Box overflow="auto" p="5" flex="0.8" className="border-r" h="full" backgroundColor="#f5f5f5">
-          {/* pass the notes in the Sidebar */}
-          {/* <Sidebar notes={notes} /> */}
-          <Sidebar />
+          {/* pass the notes in the NoteList */}
+          {/* <NoteList notes={notes} /> */}
+          <NoteList />
         </Box>
 
-        {/* content of Note */}
+        {/* Content Panel */}
         <Box flex="2" p="4" h="full" overflow="auto" flexDirection="row" justifyContent="center" className="border-r">
           <Flex justify="space-between">
             <Text fontSize="20" fontWeight="600">Relatively Theory ...</Text>
@@ -204,8 +210,13 @@ const NewNote = () => {
           </Stack>
         </Box>
 
-        {/* Chat */}
-        <Chat />
+        {/* Chat Panel */}
+        <Box overflow="auto" p="5" border="r" flex="1" h="full" backgroundColor="#f5f5f5" className={ chat? "" : "hidden" }>
+          <Chat />
+        </Box>
+        
+        {/* QuickBar Panel */}
+        <Quickbar onChatChange={onChat} />
       </Flex>
     </>
   );

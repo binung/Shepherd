@@ -11,7 +11,7 @@ function ActionDropdown({ onOptionClick }: ActionDropdownProps) {
     <>
       <CustomButton
         marginTop={10}
-        buttonText="Create New Folder"
+        buttonText="Create New Note"
         onClick={() => {
           onOptionClick && onOptionClick('create-note');
         }}
